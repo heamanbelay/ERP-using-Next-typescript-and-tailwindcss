@@ -1,0 +1,21 @@
+/* styles.css */
+.custom-bullet::before {
+  content: "\&rarr";
+  color: black;
+  margin-right: 0.5rem;
+}
+.gradient-background {
+  box-sizing: content-box;
+  background: linear-gradient(to top left, #70462e33, rgb(168, 117, 117));
+  background-size: cover;
+}
+.fit-to-screen {
+  width: 100vh;
+}
+.card-container {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-container:hover {
+  transform: scale(1.1);
+}
