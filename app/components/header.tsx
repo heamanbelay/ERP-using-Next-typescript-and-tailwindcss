@@ -58,7 +58,7 @@ const Header: React.FC = () => {
       focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-200
        dark:focus:ring-gray-600"
             aria-controls="navbar-sticky"
-            onClick={showNav}
+            onClick={() => setIsNav(!showNav)}
           >
             <span className="sr-only">Open main menu</span>
 

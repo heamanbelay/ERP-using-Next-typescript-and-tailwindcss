@@ -25,13 +25,14 @@ const FAQ: React.FC = () => {
       desc: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua",
     },
     {
-      title: "when ut labore et dolore ? ",
-      desc: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua",
-    },
-    {
       title: " how do your company help me ? ",
       desc: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua",
     },
+    {
+      title: "when ut labore et dolore ? ",
+      desc: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua",
+    },
+
     {
       title: "Why Lorem ipsum dolor ? ",
       desc: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua",
@@ -48,28 +49,24 @@ const FAQ: React.FC = () => {
 
   return (
     <>
-      <section className="mt-[150px] flex justify-center ">
-        {/* <div
-          className="relative w-[500px] bg-[#e3edf7] 
-            shadow-lg [6px_6px_10px_-1px_rgba(0,0,0,0.15), 
-            -6px_-6px_10px_-1px_rgba(255,255,255,0.8)] 
-            rounded-xl m-[15px]"
-        > */}
-        <p className="text-5xl text-center font-medium text-black ">
-          Explore more about us
-        </p>
-        <div className=" px-[40px] max-w-[800px]">
-          {accordata.map((data, index) => {
-            return (
-              <Accordion
-                key={index}
-                open={index === open}
-                title={data.title}
-                desc={data.desc}
-                toggle={() => toggle(index)}
-              />
-            );
-          })}
+      <section className="mt-[250px] lg:p-4 my-20 ">
+        <div className="container mx-auto p-8">
+          <p className="text-5xl text-center font-medium text-black mt-[-300px] mb-16 ">
+            Frequently Asked Questions{" "}
+          </p>
+          <div className="flex flex-col items-center  max-w-sm  mx-auto px-[40px] sm:max-w-[600px] lg:max-w-[800px] ">
+            {accordata.map((data, index) => {
+              return (
+                <Accordion
+                  key={index}
+                  open={index === open}
+                  title={data.title}
+                  desc={data.desc}
+                  toggle={() => toggle(index)}
+                />
+              );
+            })}
+          </div>
         </div>
       </section>
     </>

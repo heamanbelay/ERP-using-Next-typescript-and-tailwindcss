@@ -23,7 +23,7 @@ const Accordion: React.FC<AccordionProps> = ({ open, toggle, title, desc }) => {
     <>
       <div className="pt-[10px] ">
         <div
-          className=" bg-[#e3edf7] tracking-[1px] relative w-[800px]
+          className=" bg-[] tracking-[1px] relative w-[800px]
                 mx-[20px] h-[50px] flex items-center py-[25px]
                  px-[50px] flex justify-between items-center
                   cursor-pointer shadow-lg
